@@ -1,0 +1,76 @@
+/* Seletor{Propriedade:Valor} */
+/* a tag body é o corpo e tag pai por envolver as outas */
+body {
+    /* background é a cor de fondo do elemento 
+    background: #CCCCCC;*/
+}
+/* largura altura espaçamento interno e externo do elemento, essas funções basicas posicionamento; */
+#banner {
+    /* width é a lagura do elemento, pode ser em pixel ou percentual, nesse caso não importa o dispositivo ira se ajustar a toda tela */
+    width: 100%;
+}
+.principal {
+    background: #CCCCCC;
+     /* espaçamento interno de 30px */
+    padding: 30px;
+}
+/*h1 {
+     height é a altura dentro da area de 100px 
+    height: 150px; 
+    text-align: center; */
+/* border é a borda do elemento, onde colocamos 10 pixels de cor solida preta, ela
+    border: 10px solid #000000; */
+/* padding é o espaçamento interno, e pode vim com o lado especifico, somente ele são todos os lados 
+    padding-top: 20px; */
+/* margin é o espaçamento externo, também temos todas as direções, resumindo é a margem entre o elemento e o navegador 
+    margin: 40px; 
+}*/
+.titulo-principal{
+    margin-left: 20px;
+}
+.titulocen-tralizado {
+    text-align: center;
+}
+/* pegamos o seletor p que são os paragrafos e em todos os paragrafos ira surtir efeito */
+p {
+    text-align: center;
+   /* background: #CCCCCC; */
+}
+/* usa # por ser uma id, um item especifico para estilização */
+#missao {
+    color:purple;
+    font-size: 20px;
+}
+/* já aqui pegamos estrong que está dentro do em, sendo uma forma de pegar um seletor especifico evitando de fazer o css inline, sendo essa função a cascata */
+em strong {
+    /* color é a cor do elemento que pode ter o valor também tipo nome "red" além do formato hexadecimal */
+    color: red;
+}
+/* para chamar classes usamos o "." */
+.itens {
+    /* estilo da fonte: italico */
+    font-style: italic;
+}
+.beneficios {
+    background: #FFFFFF;
+    /* espaçamento interno de 20px */
+    padding: 20px;
+}
+
+/*h2 {
+    text-align: center;
+}*/
+
+ul {
+    /* ele ocupa só o tamanho do conteúdo mas não mdeixa mexer em sua largura e espaços, só que todos elementos são alinhados pela linha de baixo e para isso usamos vertical-align: top para alinhar em cima; sendo assim lista ul ocupa só o tamanho dela e imagem 50% da pagina */
+    display: inline-block;
+    vertical-align: top;
+    /* a lista tem 20% de largura da pagina */
+    width: 20%;
+    /* e ela tem um espaçamento externo de + 15% */
+    margin-right: 15%;
+}
+
+.imagembeneficios {
+    width: 50%;
+}

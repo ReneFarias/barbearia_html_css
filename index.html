@@ -1,0 +1,73 @@
+<!-- tag usada para falar ao navegador a versão do html, e essa é a versão mais recente a 5 -->
+<!DOCTYPE html>
+<!--  tag html é onde vai ficar todo o conteúdo da página, e também a lingua da página -->
+<html lang="pr-BR">
+    <!-- a tag head é onde se encontra as informações que vamos passar par o navegador -->
+    <head>
+<!-- lingha da america do sul, da acentuação as palavras -->
+    <meta charset="UTF-8">
+<!-- tag serve para dar titulo a página, vista no canto superior do navegador -->
+    <title>Barbearia Alura</title>
+<!-- link de um arquivo para o outro, rel que é relacionamento de um para o outro que é ""folhadeestilo", e href que é endereço de referencia onde o arquivo está. -->
+    <link rel="stylesheet" href="style.css">
+
+<!-- já a tag style no head serve para passar parametros para conjunto de tags, não precisando fazer em cada uma -->
+        <style>
+            /* colocamos a tag e passamos os estilos entre {} */
+            p {
+                text-align: center;
+            }
+        </style>
+
+    </head>
+<!-- no body fica as informações que queremos exibir -->
+    <body>
+        <!-- a tag header é cabeçalho, parte importante da página -->
+        <header>
+            <h1 class="titulo-principal">Barbearia Alura</h1>
+
+        </header>
+       
+        <!-- img para dizer que é uma imagem, src que é o caminho "source", e entre os "" a igagem em si -->
+        <img id="banner" src="/banner.jpg">
+        <!-- a div é uma divisão, serve apenas para separar uma área do body, e geralmente é atribuida uma classe ou id -->
+        <div class="principal">
+            <!-- esse é um comentario html, olhe como ele é feito, sem pre usaremos tags que são esses sinais = <> , e colocamos !-- comentario e fechamos dessa forma = -->
+            <!-- para começarmos precisamos de dar o nome da página HTML, que geralmente é index.html -->
+            <!-- a tag <h1> é para definir como titulo o texto, existem do 1 sendo h1 até o 6°, o h6 servindo como subtitulo, a maioria das tags abrem = <h1> e fecham com o / = </h1 > -->
+            <!-- utilizamos a tag style dentro da tag que queremos estilizar, atribuimos com sinal = o parametro text-aling que serve para alinhar o texto, e colocamos o valor center que em pt é centro, e backgrund que é cor de fundo do elemento, tendo a cor cinza em hexadecimal  -->
+            <h2 class="titulocen-tralizado" style="text-align: center; background: #CCCCCC;">Sobre a Barbearia Alura</h2>
+            <!-- o style dentro das tags estilizadas, é conhecima como inline, usada para implementar de forma rápida e simples no html de forma unica em cada tag -->
+            <!-- a tag <p> é para definir o texto como paragrafo no html -->
+            <!-- a tag <strong> serve para dar importancia a parte do texto, e tmabem servindo como NEGRITO -->
+            <p style="text-align: center;">Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+             <!-- a tag style é para utilizarmos o css, css que é "folha de estilo em cascata"; atribuimos com =; dentro dos "" escolhemos os atributos, que nesse caso é fonte e seu tamanho, e colocamos o tamanho em pixels com px; obs tamanho padrão do paragrafo é 16px.
+             Para adicionarmos outras propriedades usamos o ";" para separar os estilos -->
+            <!-- a tag <em> deixa o texto em ITALICO -->
+            <!-- id serve para pegar uma tag especifica e estilizarmos no css referindose com o #missao -->
+            <p id="missao" style="font-size: 20px;text-align: center;"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+
+            <p style="text-align: center;">Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+        </div>
+        <div class="beneficios">
+             <!-- h2 sendo o subtitulo da sessão criada -->
+            <h3 class="titulocen-tralizado" >Benefícios</h3>
+            <!-- ul é uma lista não ordenada, ol é lista ordenada, como uma receita -->
+             <ul>
+             <!-- listem item = item listado; class para agrupar determinados itens para serem editados -->
+            <li class="itens">Atendimento aos clientes</li>
+            <li class="itens">Espaço diferenciado</li>
+            <li class="itens">Localização</li>
+            <li class="itens">Profissionais qualificados</li>
+        </ul>
+        <!-- para modificar a imagem usamos a classe imagembeneficios -->
+<!-- IMPORTANTE! toda tag preenche e quebra a linha automaticamente, sendo assim o próximo item começa na linha de baixo; esse comportamento de ocupar a linha inteira é chamado block, cujo bloqueia o conteúdo daquela linha, como a lista ul;
+     uma imagem ela não bloqueia o conteúdo, ela deixa outros ao seu lado, sendo isso o inline;
+o que acontece é que o block ele sempre vai ocupar aquela linha mesmo só 50%, já o inline não deixa alterar o espaçamento externo nem o interno;
+ai entra o inline & block ou seja ele bloqueia uma largura mas ela é fixa eu quem dou o tamanho,  e deixa mexer em sua largura seu espaçamento interno e externo -->
+        <img src="/beneficios.jpg" class="imagembeneficios">
+</div>
+    </body>
+<!-- ------------ ESSA FOI AULA 1 --------------- -->
+<!-- fechamento da tag html onde tem o conteúdo -->
+</html>
